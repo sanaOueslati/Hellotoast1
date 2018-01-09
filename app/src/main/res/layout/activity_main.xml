@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sana.hellotoast.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toast"
+            android:text="Toast"
+            android:background="@color/colorPrimary"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.12"
+            android:onClick="showToast"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:text="0"
+        android:id="@+id/txtV"
+            android:layout_weight="1.15"
+            android:textSize="200sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:background="@color/myBackgroundColor"
+            android:onClick="countUp"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/count"
+            android:text="Count"
+            android:background="@color/colorPrimary"
+            android:elevation="0dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/toast"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="37dp"
+            android:onClick="countUp"/>
+
+</LinearLayout>
+
+</LinearLayout>
